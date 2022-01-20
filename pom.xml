@@ -9,7 +9,8 @@
 		<org.springframework-version>4.3.3.RELEASE</org.springframework-version>
 	</properties>
 	
-	<dependencies>
+	<dependencies>	
+	
 		<!-- spring container(core) -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -41,7 +42,27 @@
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.4</version>
-		</dependency>		
+		</dependency>	
+		
+		<!-- spring jdbc(DataSource)-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- MyBatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>1.2.0</version>
+		</dependency>
 	</dependencies>
   
   <build>

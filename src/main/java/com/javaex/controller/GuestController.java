@@ -51,6 +51,7 @@ public class GuestController {
 		return "deleteForm";
 	}
 	
+	
 	@RequestMapping(value="delete", method= {RequestMethod.GET, RequestMethod.POST})
 	public String delete(@ModelAttribute GuestbookVo gvo) {
 		System.out.println("/gueset/delete");
@@ -62,6 +63,7 @@ public class GuestController {
 		return "redirect:/guest/addList";
 	}
 	
+	
 	@RequestMapping(value="insert", method= {RequestMethod.GET, RequestMethod.POST})
 	public String insert(@ModelAttribute GuestbookVo gvo) {
 		System.out.println("/guest/insert");
@@ -70,4 +72,5 @@ public class GuestController {
 		
 		return "redirect:/guest/addList";
 	}
+	
 }
